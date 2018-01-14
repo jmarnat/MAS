@@ -6,3 +6,9 @@
 
 
 
+to run :
+
+`cd frodo2`
+
+`java -cp frodo2.jar frodo2.algorithms.AgentFactory ../subcelar-6-0.xml ./agents/DPOP/DPOPagentJaCoP.xml`
+
