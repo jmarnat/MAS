@@ -77,13 +77,13 @@
 		<predicate name="DEV">
 			<parameters>int A int B int C</parameters>
 			<expression>
-				<functional>lt(abs(sub(A,B)),C)</functional>
+				<functional>gt(abs(sub(A,B)),C)</functional>
 			</expression>
 		</predicate>
 		<predicate name="EQ">
 			<parameters>int A int B</parameters>
 			<expression>
-				<functional>eq(abs(sub(A,B)),0)</functional>
+				<functional>eq(abs(sub(A,B)),238)</functional>
 			</expression>
 		</predicate>
 	</predicates>

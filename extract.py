@@ -84,21 +84,21 @@ def create_tree(path, domain_union=False):
     nbPredicates = 1
     predicates = ET.SubElement(instance, "predicates", nbPredicates = str(nbPredicates))
     
-    # deviation : |ant_A - ant_B| < dev
+    # deviation : |ant_A - ant_B| > dev
     pred_dev = ET.SubElement(predicates, "predicate", name="DEV")
     params_dev = ET.SubElement(pred_dev, "parameters")
     params_dev.text = "int A int B int C"
     expr_dev = ET.SubElement(pred_dev, "expression")
     func_dev = ET.SubElement(expr_dev, "functional")
-    func_dev.text = "lt(abs(sub(A,B)),C)"
+    func_dev.text = "gt(abs(sub(A,B)),C)"
     
-    # or distance equal : |and_A - and_B| = 0
+    # or distance equal : |and_A - and_B| = 238
     pred_eq = ET.SubElement(predicates, "predicate", name="EQ")
     params_eq = ET.SubElement(pred_eq, "parameters")
     params_eq.text = "int A int B"
     expr_eq = ET.SubElement(pred_eq, "expression")
     func_eq = ET.SubElement(expr_eq, "functional")
-    func_eq.text = "eq(abs(sub(A,B)),0)"
+    func_eq.text = "eq(abs(sub(A,B)),238)"
     
     
     
@@ -113,9 +113,9 @@ def create_tree(path, domain_union=False):
         antA = str(int(row[0]))
         antB = str(int(row[1]))
         cst_type = row[3]
+        dev = int(row[4])
+
         if cst_type == '>':
-#            print('sajdfalkjfa')
-            dev = int(row[4])
             constraint = ET.SubElement(
                     constraints,
                     "constraint",
