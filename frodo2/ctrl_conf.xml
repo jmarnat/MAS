@@ -1,0 +1,9 @@
+<experiment>
+	<configuration>
+		<resultFile fileName="results.log" />
+		<agentDescription agentName = "algorithms/dpop/DPOPagentJaCoP.xml" />
+	</configuration>
+	<problemList nbProblem="1">
+		<file fileName = "../subcelar-6-x.xml" />
+	</problemList>
+</experiment>

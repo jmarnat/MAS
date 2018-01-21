@@ -1,0 +1,75 @@
+<?xml version="1.0" ?>
+<instance>
+	<presentation format="XCSP 2.1_FRODO" maxConstraintArity="2" maximize="false" name="sampleProblem"/>
+	<agents nbAgents="10">
+		<agent name="agt_1"/>
+		<agent name="agt_2"/>
+		<agent name="agt_3"/>
+		<agent name="agt_4"/>
+		<agent name="agt_5"/>
+		<agent name="agt_6"/>
+		<agent name="agt_7"/>
+		<agent name="agt_8"/>
+		<agent name="agt_9"/>
+		<agent name="agt_10"/>
+	</agents>
+	<variables nbVariables="10">
+		<variable agent="agt_1" domain="dom_1" name="ant_1"/>
+		<variable agent="agt_2" domain="dom_1" name="ant_2"/>
+		<variable agent="agt_3" domain="dom_2" name="ant_3"/>
+		<variable agent="agt_4" domain="dom_2" name="ant_4"/>
+		<variable agent="agt_5" domain="dom_1" name="ant_5"/>
+		<variable agent="agt_6" domain="dom_1" name="ant_6"/>
+		<variable agent="agt_7" domain="dom_1" name="ant_7"/>
+		<variable agent="agt_8" domain="dom_1" name="ant_8"/>
+		<variable agent="agt_9" domain="dom_1" name="ant_9"/>
+		<variable agent="agt_10" domain="dom_1" name="ant_10"/>
+	</variables>
+	<domains nbDomains="2">
+		<domain name="dom_1" nbValues="44">16 30 44 58 72 86 100 114 128 142 156 254 268 282 296 310 324 338 352 366 380 394 414 428 442 456 470 484 498 512 526 540 554 652 666 680 694 708 722 736 750 764 778 792</domain>
+		<domain name="dom_2" nbValues="22">30 58 86 114 142 268 296 324 352 380 414 442 470 498 526 554 652 680 708 736 764 792</domain>
+	</domains>
+	<predicates nbPredicates="2">
+		<predicate name="DEV">
+			<parameters>int A int B int C</parameters>
+			<expression>
+				<functional>gt(abs(sub(A,B)),C)</functional>
+			</expression>
+		</predicate>
+		<predicate name="EQ">
+			<parameters>int A int B</parameters>
+			<expression>
+				<functional>eq(abs(sub(A,B)),238)</functional>
+			</expression>
+		</predicate>
+	</predicates>
+	<constraints nbConstraints="9">
+		<constraint arity="2" name="cst_1_2" reference="EQ" scope="ant_1 ant_2">
+			<parameters>ant_1 ant_2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_3_4" reference="EQ" scope="ant_3 ant_4">
+			<parameters>ant_3 ant_4</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_5_6" reference="EQ" scope="ant_5 ant_6">
+			<parameters>ant_5 ant_6</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_7_8" reference="EQ" scope="ant_7 ant_8">
+			<parameters>ant_7 ant_8</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_7_9" reference="DEV" scope="ant_7 ant_9">
+			<parameters>ant_7 ant_9 59</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_7_10" reference="DEV" scope="ant_7 ant_10">
+			<parameters>ant_7 ant_10 84</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_8_9" reference="DEV" scope="ant_8 ant_9">
+			<parameters>ant_8 ant_9 84</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_8_10" reference="DEV" scope="ant_8 ant_10">
+			<parameters>ant_8 ant_10 59</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_9_10" reference="EQ" scope="ant_9 ant_10">
+			<parameters>ant_9 ant_10</parameters>
+		</constraint>
+	</constraints>
+</instance>
