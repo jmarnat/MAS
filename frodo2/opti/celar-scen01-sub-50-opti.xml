@@ -1,0 +1,482 @@
+<?xml version="1.0" ?>
+<instance>
+	<presentation format="XCSP 2.1_FRODO" maxConstraintArity="2" maximize="false" name="sampleProblem"/>
+	<variables nbVariables="50">
+		<variable agent="agt_1" domain="dom_1" name="ant_1"/>
+		<variable agent="agt_2" domain="dom_1" name="ant_2"/>
+		<variable agent="agt_1" domain="dom_2" name="ant_3"/>
+		<variable agent="agt_2" domain="dom_2" name="ant_4"/>
+		<variable agent="agt_1" domain="dom_1" name="ant_5"/>
+		<variable agent="agt_2" domain="dom_1" name="ant_6"/>
+		<variable agent="agt_1" domain="dom_1" name="ant_7"/>
+		<variable agent="agt_2" domain="dom_1" name="ant_8"/>
+		<variable agent="agt_3" domain="dom_1" name="ant_9"/>
+		<variable agent="agt_4" domain="dom_1" name="ant_10"/>
+		<variable agent="agt_1" domain="dom_1" name="ant_11"/>
+		<variable agent="agt_2" domain="dom_1" name="ant_12"/>
+		<variable agent="agt_1" domain="dom_1" name="ant_13"/>
+		<variable agent="agt_2" domain="dom_1" name="ant_14"/>
+		<variable agent="agt_3" domain="dom_1" name="ant_15"/>
+		<variable agent="agt_2" domain="dom_1" name="ant_16"/>
+		<variable agent="agt_4" domain="dom_1" name="ant_17"/>
+		<variable agent="agt_3" domain="dom_1" name="ant_18"/>
+		<variable agent="agt_3" domain="dom_2" name="ant_19"/>
+		<variable agent="agt_4" domain="dom_2" name="ant_20"/>
+		<variable agent="agt_1" domain="dom_3" name="ant_21"/>
+		<variable agent="agt_2" domain="dom_3" name="ant_22"/>
+		<variable agent="agt_1" domain="dom_3" name="ant_23"/>
+		<variable agent="agt_2" domain="dom_3" name="ant_24"/>
+		<variable agent="agt_1" domain="dom_1" name="ant_25"/>
+		<variable agent="agt_2" domain="dom_1" name="ant_26"/>
+		<variable agent="agt_1" domain="dom_1" name="ant_27"/>
+		<variable agent="agt_2" domain="dom_1" name="ant_28"/>
+		<variable agent="agt_1" domain="dom_2" name="ant_29"/>
+		<variable agent="agt_2" domain="dom_2" name="ant_30"/>
+		<variable agent="agt_3" domain="dom_2" name="ant_31"/>
+		<variable agent="agt_4" domain="dom_2" name="ant_32"/>
+		<variable agent="agt_3" domain="dom_2" name="ant_33"/>
+		<variable agent="agt_4" domain="dom_2" name="ant_34"/>
+		<variable agent="agt_5" domain="dom_2" name="ant_35"/>
+		<variable agent="agt_6" domain="dom_2" name="ant_36"/>
+		<variable agent="agt_7" domain="dom_2" name="ant_37"/>
+		<variable agent="agt_8" domain="dom_2" name="ant_38"/>
+		<variable agent="agt_7" domain="dom_2" name="ant_39"/>
+		<variable agent="agt_8" domain="dom_2" name="ant_40"/>
+		<variable agent="agt_7" domain="dom_2" name="ant_41"/>
+		<variable agent="agt_9" domain="dom_2" name="ant_42"/>
+		<variable agent="agt_5" domain="dom_2" name="ant_43"/>
+		<variable agent="agt_6" domain="dom_2" name="ant_44"/>
+		<variable agent="agt_7" domain="dom_2" name="ant_45"/>
+		<variable agent="agt_8" domain="dom_2" name="ant_46"/>
+		<variable agent="agt_9" domain="dom_2" name="ant_47"/>
+		<variable agent="agt_10" domain="dom_2" name="ant_48"/>
+		<variable agent="agt_1" domain="dom_1" name="ant_49"/>
+		<variable agent="agt_2" domain="dom_1" name="ant_50"/>
+	</variables>
+	<domains nbDomains="3">
+		<domain name="dom_1" nbValues="44">16 30 44 58 72 86 100 114 128 142 156 254 268 282 296 310 324 338 352 366 380 394 414 428 442 456 470 484 498 512 526 540 554 652 666 680 694 708 722 736 750 764 778 792</domain>
+		<domain name="dom_2" nbValues="22">30 58 86 114 142 268 296 324 352 380 414 442 470 498 526 554 652 680 708 736 764 792</domain>
+		<domain name="dom_3" nbValues="36">30 44 58 72 86 100 114 128 142 268 282 296 310 324 338 352 366 380 428 442 456 470 484 498 512 526 540 666 680 694 708 722 736 750 764 778</domain>
+	</domains>
+	<predicates nbPredicates="2">
+		<predicate name="DEV">
+			<parameters>int A int B int C</parameters>
+			<expression>
+				<functional>gt(abs(sub(A,B)),C)</functional>
+			</expression>
+		</predicate>
+		<predicate name="EQ">
+			<parameters>int A int B</parameters>
+			<expression>
+				<functional>eq(abs(sub(A,B)),238)</functional>
+			</expression>
+		</predicate>
+	</predicates>
+	<constraints nbConstraints="131">
+		<constraint arity="2" name="cst_1_2" reference="EQ" scope="ant_1 ant_2">
+			<parameters>ant_1 ant_2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_3_4" reference="EQ" scope="ant_3 ant_4">
+			<parameters>ant_3 ant_4</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_3_18" reference="DEV" scope="ant_3 ant_18">
+			<parameters>ant_3 ant_18 19</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_3_19" reference="DEV" scope="ant_3 ant_19">
+			<parameters>ant_3 ant_19 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_3_20" reference="DEV" scope="ant_3 ant_20">
+			<parameters>ant_3 ant_20 55</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_3_47" reference="DEV" scope="ant_3 ant_47">
+			<parameters>ant_3 ant_47 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_3_48" reference="DEV" scope="ant_3 ant_48">
+			<parameters>ant_3 ant_48 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_4_18" reference="DEV" scope="ant_4 ant_18">
+			<parameters>ant_4 ant_18 21</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_4_19" reference="DEV" scope="ant_4 ant_19">
+			<parameters>ant_4 ant_19 55</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_4_20" reference="DEV" scope="ant_4 ant_20">
+			<parameters>ant_4 ant_20 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_4_47" reference="DEV" scope="ant_4 ant_47">
+			<parameters>ant_4 ant_47 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_4_48" reference="DEV" scope="ant_4 ant_48">
+			<parameters>ant_4 ant_48 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_5_6" reference="EQ" scope="ant_5 ant_6">
+			<parameters>ant_5 ant_6</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_7_8" reference="EQ" scope="ant_7 ant_8">
+			<parameters>ant_7 ant_8</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_7_9" reference="DEV" scope="ant_7 ant_9">
+			<parameters>ant_7 ant_9 59</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_7_10" reference="DEV" scope="ant_7 ant_10">
+			<parameters>ant_7 ant_10 84</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_8_9" reference="DEV" scope="ant_8 ant_9">
+			<parameters>ant_8 ant_9 84</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_8_10" reference="DEV" scope="ant_8 ant_10">
+			<parameters>ant_8 ant_10 59</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_9_10" reference="EQ" scope="ant_9 ant_10">
+			<parameters>ant_9 ant_10</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_11_12" reference="EQ" scope="ant_11 ant_12">
+			<parameters>ant_11 ant_12</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_13_14" reference="EQ" scope="ant_13 ant_14">
+			<parameters>ant_13 ant_14</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_13_16" reference="DEV" scope="ant_13 ant_16">
+			<parameters>ant_13 ant_16 84</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_14_15" reference="DEV" scope="ant_14 ant_15">
+			<parameters>ant_14 ant_15 84</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_15_16" reference="EQ" scope="ant_15 ant_16">
+			<parameters>ant_15 ant_16</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_17_18" reference="EQ" scope="ant_17 ant_18">
+			<parameters>ant_17 ant_18</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_19_20" reference="EQ" scope="ant_19 ant_20">
+			<parameters>ant_19 ant_20</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_19_43" reference="DEV" scope="ant_19 ant_43">
+			<parameters>ant_19 ant_43 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_19_44" reference="DEV" scope="ant_19 ant_44">
+			<parameters>ant_19 ant_44 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_19_45" reference="DEV" scope="ant_19 ant_45">
+			<parameters>ant_19 ant_45 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_19_46" reference="DEV" scope="ant_19 ant_46">
+			<parameters>ant_19 ant_46 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_19_47" reference="DEV" scope="ant_19 ant_47">
+			<parameters>ant_19 ant_47 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_19_48" reference="DEV" scope="ant_19 ant_48">
+			<parameters>ant_19 ant_48 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_20_43" reference="DEV" scope="ant_20 ant_43">
+			<parameters>ant_20 ant_43 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_20_44" reference="DEV" scope="ant_20 ant_44">
+			<parameters>ant_20 ant_44 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_20_45" reference="DEV" scope="ant_20 ant_45">
+			<parameters>ant_20 ant_45 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_20_46" reference="DEV" scope="ant_20 ant_46">
+			<parameters>ant_20 ant_46 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_20_47" reference="DEV" scope="ant_20 ant_47">
+			<parameters>ant_20 ant_47 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_20_48" reference="DEV" scope="ant_20 ant_48">
+			<parameters>ant_20 ant_48 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_21_22" reference="EQ" scope="ant_21 ant_22">
+			<parameters>ant_21 ant_22</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_23_24" reference="EQ" scope="ant_23 ant_24">
+			<parameters>ant_23 ant_24</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_25_26" reference="EQ" scope="ant_25 ant_26">
+			<parameters>ant_25 ant_26</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_27_28" reference="EQ" scope="ant_27 ant_28">
+			<parameters>ant_27 ant_28</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_29_30" reference="EQ" scope="ant_29 ant_30">
+			<parameters>ant_29 ant_30</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_29_31" reference="DEV" scope="ant_29 ant_31">
+			<parameters>ant_29 ant_31 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_29_32" reference="DEV" scope="ant_29 ant_32">
+			<parameters>ant_29 ant_32 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_29_33" reference="DEV" scope="ant_29 ant_33">
+			<parameters>ant_29 ant_33 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_29_34" reference="DEV" scope="ant_29 ant_34">
+			<parameters>ant_29 ant_34 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_29_35" reference="DEV" scope="ant_29 ant_35">
+			<parameters>ant_29 ant_35 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_29_36" reference="DEV" scope="ant_29 ant_36">
+			<parameters>ant_29 ant_36 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_29_37" reference="DEV" scope="ant_29 ant_37">
+			<parameters>ant_29 ant_37 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_30_31" reference="DEV" scope="ant_30 ant_31">
+			<parameters>ant_30 ant_31 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_30_32" reference="DEV" scope="ant_30 ant_32">
+			<parameters>ant_30 ant_32 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_30_33" reference="DEV" scope="ant_30 ant_33">
+			<parameters>ant_30 ant_33 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_30_34" reference="DEV" scope="ant_30 ant_34">
+			<parameters>ant_30 ant_34 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_30_35" reference="DEV" scope="ant_30 ant_35">
+			<parameters>ant_30 ant_35 21</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_30_36" reference="DEV" scope="ant_30 ant_36">
+			<parameters>ant_30 ant_36 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_30_37" reference="DEV" scope="ant_30 ant_37">
+			<parameters>ant_30 ant_37 119</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_30_38" reference="DEV" scope="ant_30 ant_38">
+			<parameters>ant_30 ant_38 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_31_32" reference="EQ" scope="ant_31 ant_32">
+			<parameters>ant_31 ant_32</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_31_37" reference="DEV" scope="ant_31 ant_37">
+			<parameters>ant_31 ant_37 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_31_38" reference="DEV" scope="ant_31 ant_38">
+			<parameters>ant_31 ant_38 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_32_37" reference="DEV" scope="ant_32 ant_37">
+			<parameters>ant_32 ant_37 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_32_38" reference="DEV" scope="ant_32 ant_38">
+			<parameters>ant_32 ant_38 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_33_34" reference="EQ" scope="ant_33 ant_34">
+			<parameters>ant_33 ant_34</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_33_35" reference="DEV" scope="ant_33 ant_35">
+			<parameters>ant_33 ant_35 119</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_33_36" reference="DEV" scope="ant_33 ant_36">
+			<parameters>ant_33 ant_36 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_33_37" reference="DEV" scope="ant_33 ant_37">
+			<parameters>ant_33 ant_37 21</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_33_38" reference="DEV" scope="ant_33 ant_38">
+			<parameters>ant_33 ant_38 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_33_39" reference="DEV" scope="ant_33 ant_39">
+			<parameters>ant_33 ant_39 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_33_40" reference="DEV" scope="ant_33 ant_40">
+			<parameters>ant_33 ant_40 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_33_41" reference="DEV" scope="ant_33 ant_41">
+			<parameters>ant_33 ant_41 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_33_42" reference="DEV" scope="ant_33 ant_42">
+			<parameters>ant_33 ant_42 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_34_35" reference="DEV" scope="ant_34 ant_35">
+			<parameters>ant_34 ant_35 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_34_36" reference="DEV" scope="ant_34 ant_36">
+			<parameters>ant_34 ant_36 119</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_34_37" reference="DEV" scope="ant_34 ant_37">
+			<parameters>ant_34 ant_37 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_34_38" reference="DEV" scope="ant_34 ant_38">
+			<parameters>ant_34 ant_38 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_34_39" reference="DEV" scope="ant_34 ant_39">
+			<parameters>ant_34 ant_39 22</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_34_40" reference="DEV" scope="ant_34 ant_40">
+			<parameters>ant_34 ant_40 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_34_41" reference="DEV" scope="ant_34 ant_41">
+			<parameters>ant_34 ant_41 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_34_42" reference="DEV" scope="ant_34 ant_42">
+			<parameters>ant_34 ant_42 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_35_36" reference="EQ" scope="ant_35 ant_36">
+			<parameters>ant_35 ant_36</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_35_37" reference="DEV" scope="ant_35 ant_37">
+			<parameters>ant_35 ant_37 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_35_38" reference="DEV" scope="ant_35 ant_38">
+			<parameters>ant_35 ant_38 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_35_39" reference="DEV" scope="ant_35 ant_39">
+			<parameters>ant_35 ant_39 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_35_40" reference="DEV" scope="ant_35 ant_40">
+			<parameters>ant_35 ant_40 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_35_41" reference="DEV" scope="ant_35 ant_41">
+			<parameters>ant_35 ant_41 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_35_42" reference="DEV" scope="ant_35 ant_42">
+			<parameters>ant_35 ant_42 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_36_37" reference="DEV" scope="ant_36 ant_37">
+			<parameters>ant_36 ant_37 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_36_38" reference="DEV" scope="ant_36 ant_38">
+			<parameters>ant_36 ant_38 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_36_39" reference="DEV" scope="ant_36 ant_39">
+			<parameters>ant_36 ant_39 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_36_40" reference="DEV" scope="ant_36 ant_40">
+			<parameters>ant_36 ant_40 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_36_41" reference="DEV" scope="ant_36 ant_41">
+			<parameters>ant_36 ant_41 22</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_36_42" reference="DEV" scope="ant_36 ant_42">
+			<parameters>ant_36 ant_42 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_37_38" reference="EQ" scope="ant_37 ant_38">
+			<parameters>ant_37 ant_38</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_39_40" reference="EQ" scope="ant_39 ant_40">
+			<parameters>ant_39 ant_40</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_39_42" reference="DEV" scope="ant_39 ant_42">
+			<parameters>ant_39 ant_42 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_39_43" reference="DEV" scope="ant_39 ant_43">
+			<parameters>ant_39 ant_43 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_39_44" reference="DEV" scope="ant_39 ant_44">
+			<parameters>ant_39 ant_44 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_39_45" reference="DEV" scope="ant_39 ant_45">
+			<parameters>ant_39 ant_45 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_39_46" reference="DEV" scope="ant_39 ant_46">
+			<parameters>ant_39 ant_46 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_40_41" reference="DEV" scope="ant_40 ant_41">
+			<parameters>ant_40 ant_41 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_40_42" reference="DEV" scope="ant_40 ant_42">
+			<parameters>ant_40 ant_42 119</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_40_43" reference="DEV" scope="ant_40 ant_43">
+			<parameters>ant_40 ant_43 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_40_44" reference="DEV" scope="ant_40 ant_44">
+			<parameters>ant_40 ant_44 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_40_45" reference="DEV" scope="ant_40 ant_45">
+			<parameters>ant_40 ant_45 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_40_46" reference="DEV" scope="ant_40 ant_46">
+			<parameters>ant_40 ant_46 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_41_42" reference="EQ" scope="ant_41 ant_42">
+			<parameters>ant_41 ant_42</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_41_43" reference="DEV" scope="ant_41 ant_43">
+			<parameters>ant_41 ant_43 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_41_44" reference="DEV" scope="ant_41 ant_44">
+			<parameters>ant_41 ant_44 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_41_45" reference="DEV" scope="ant_41 ant_45">
+			<parameters>ant_41 ant_45 33</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_41_46" reference="DEV" scope="ant_41 ant_46">
+			<parameters>ant_41 ant_46 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_42_43" reference="DEV" scope="ant_42 ant_43">
+			<parameters>ant_42 ant_43 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_42_44" reference="DEV" scope="ant_42 ant_44">
+			<parameters>ant_42 ant_44 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_42_45" reference="DEV" scope="ant_42 ant_45">
+			<parameters>ant_42 ant_45 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_42_46" reference="DEV" scope="ant_42 ant_46">
+			<parameters>ant_42 ant_46 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_43_44" reference="EQ" scope="ant_43 ant_44">
+			<parameters>ant_43 ant_44</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_43_45" reference="DEV" scope="ant_43 ant_45">
+			<parameters>ant_43 ant_45 119</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_43_46" reference="DEV" scope="ant_43 ant_46">
+			<parameters>ant_43 ant_46 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_43_47" reference="DEV" scope="ant_43 ant_47">
+			<parameters>ant_43 ant_47 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_43_48" reference="DEV" scope="ant_43 ant_48">
+			<parameters>ant_43 ant_48 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_44_45" reference="DEV" scope="ant_44 ant_45">
+			<parameters>ant_44 ant_45 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_44_46" reference="DEV" scope="ant_44 ant_46">
+			<parameters>ant_44 ant_46 119</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_44_47" reference="DEV" scope="ant_44 ant_47">
+			<parameters>ant_44 ant_47 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_44_48" reference="DEV" scope="ant_44 ant_48">
+			<parameters>ant_44 ant_48 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_45_46" reference="EQ" scope="ant_45 ant_46">
+			<parameters>ant_45 ant_46</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_45_47" reference="DEV" scope="ant_45 ant_47">
+			<parameters>ant_45 ant_47 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_45_48" reference="DEV" scope="ant_45 ant_48">
+			<parameters>ant_45 ant_48 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_46_47" reference="DEV" scope="ant_46 ant_47">
+			<parameters>ant_46 ant_47 2</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_46_48" reference="DEV" scope="ant_46 ant_48">
+			<parameters>ant_46 ant_48 56</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_47_48" reference="EQ" scope="ant_47 ant_48">
+			<parameters>ant_47 ant_48</parameters>
+		</constraint>
+		<constraint arity="2" name="cst_49_50" reference="EQ" scope="ant_49 ant_50">
+			<parameters>ant_49 ant_50</parameters>
+		</constraint>
+	</constraints>
+	<agents nbAgents="10">
+		<agent name="agt_1"/>
+		<agent name="agt_2"/>
+		<agent name="agt_3"/>
+		<agent name="agt_4"/>
+		<agent name="agt_5"/>
+		<agent name="agt_6"/>
+		<agent name="agt_7"/>
+		<agent name="agt_8"/>
+		<agent name="agt_9"/>
+		<agent name="agt_10"/>
+	</agents>
+</instance>

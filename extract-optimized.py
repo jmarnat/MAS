@@ -41,13 +41,13 @@ def dupdate(d,antA,antB):
         #print('dupdate(d,',str(antA),',',str(antB),')','\n',str(d))
         return
     if agtA < 0 and agtB > 0:
-        for i in range(1,len(d)+2):
+        for i in range(agtB+1,len(d)+2):
             if (i != agtB):
                 dadd(d,i,antA)
                 #print('dupdate(d,',str(antA),',',str(antB),')','\n',str(d))
                 return
     if agtA > 0 and agtB < 0:
-        for i in range(1,len(d)+2):
+        for i in range(agtA+1,len(d)+2):
             if (i != agtA):
                 dadd(d,i,antB)
                 #print('dupdate(d,',str(antA),',',str(antB),')','\n',str(d))
@@ -108,33 +108,37 @@ def create_tree(path, domain_union=False, subset=10, optimize_agents=True):
     #############
     # VARIABLES #
     #############
+    print('variables... ',end='')
     nbVariables = len(var)
     variables = ET.SubElement(instance, "variables", nbVariables=str(nbVariables))
     num = 1
     list_dom = np.zeros(len(dom))
-    list_var = np.zeros(len(var))
+    list_var = np.zeros(len(var)+1)
     nbVariables_real = 0
     
     # associating the agents to an antennas
     for row in var.values:
         if (subset > 0) and (num > subset):
-            print('var break!')
+            print('subset full... ',end='')
             break
         num += 1
         num_antenna = row[0]
         num_domain = row[1]
         nbVariables_real += 1
-        if (subset > 0): list_dom[num_domain] = 1
+        list_dom[num_domain] = 1
         if (subset > 0): list_var[num_antenna] = 1
         ET.SubElement(variables, "variable", name=str(num_antenna), domain='dom_'+str(num_domain))#, agent='agt_'+str(num_antenna))
     if (subset > 0):
-        variables.set('nbVariables',str(nbVariables_real))
+        variables.set('nbVariables',str(nbVariables_real))    
     
-
+    print('done.')
+    
+    
     
     ###########
     # DOMAINS #
     ###########
+    print('domains... ',end='')
     nbDomains = len(list_dom)
     domains = ET.SubElement(instance, "domains", nbDomains=str(nbDomains))
     nbDomains_real = 0
@@ -154,10 +158,13 @@ def create_tree(path, domain_union=False, subset=10, optimize_agents=True):
     if (subset > 0):
         domains.set('nbDomains',str(nbDomains_real))
         
+    print('done.')
+        
     
     ##############
     # PREDICATES #
     ##############
+    print('predicates... ',end='')
     nbPredicates = 2
     predicates = ET.SubElement(instance, "predicates", nbPredicates = str(nbPredicates))
     
@@ -177,12 +184,14 @@ def create_tree(path, domain_union=False, subset=10, optimize_agents=True):
     func_eq = ET.SubElement(expr_eq, "functional")
     func_eq.text = "eq(abs(sub(A,B)),238)"
     
+    print('done.')
+    
     
     
     ###############
     # CONSTRAINTS #
     ###############
-    
+    print('constraints... ',end='')
     nbConstraints = len(ctr)
     nbConstraints_real = 0
     constraints = ET.SubElement(instance, "constraints", nbConstraints=str(nbConstraints))
@@ -224,10 +233,12 @@ def create_tree(path, domain_union=False, subset=10, optimize_agents=True):
     constraints.set('nbConstraints', str(nbConstraints_real))
     
     
+    print('done')
+    
     ##############################
     # CHANGING VARIABLE'S AGENTS #
     ##############################
-#    print(d)
+    print('agents changing... ',end='')
     num = 1
     # for row in var.values:
     for thevar in variables.iter('variable'):
@@ -238,17 +249,18 @@ def create_tree(path, domain_union=False, subset=10, optimize_agents=True):
         thevar.set('name','ant_'+str(num_antenna))        
         thevar.set('agent','agt_'+str(num_agent))
     
-    
+    print('done')
     
     ##########
     # AGENTS #
     ##########
+    print('agent writing... ',end='')
     nbAgents = len(d)
     agents = ET.SubElement(instance, "agents", nbAgents=str(nbAgents))
     for num_agent in range(1,len(d)+1):
         ET.SubElement(agents, "agent", name='agt_'+str(num_agent))
     
-    
+    print('done.')
     
     
     
@@ -258,7 +270,7 @@ def create_tree(path, domain_union=False, subset=10, optimize_agents=True):
     ##############
     # FINALLY... #
     ##############
-    print('success!')
+    print('ALL DONE !')
     return instance
 
 
@@ -270,23 +282,24 @@ chdir('/home/jmarnat/Documents/MAS/MAS')
 ##########################################
 # run for extracting all the celar DCOPs #
 ##########################################
+'''
 for i in range(1,12):
     pname = 'scen'+str(i).rjust(2,'0')
     print(pname)
     tree = create_tree(path = './FullRLFAP/CELAR/'+pname, domain_union=False, subset=-1, optimize_agents=True)
     save_tree(tree, 'frodo2/opti/celar-'+pname+'-opti.xml')
-
+'''
 
 #########################################
 # extracting a sub-problem from a scene #
 #########################################
 
-#tree = create_tree(path = './FullRLFAP/CELAR/scen01/', domain_union=False, subset=-1, optimize_agents=True)
+tree = create_tree(path = './FullRLFAP/CELAR/scen01/', domain_union=False, subset=-1, optimize_agents=True)
 
 ## change the num of the scene:
 # save_tree(tree, 'frodo2/celar-scen01-all-opti.xml')
 
 ## for subsets: add the number of variables:
-# save_tree(tree, 'frodo2/celar-scen01-sub-20-opti.xml')
+save_tree(tree, 'frodo2/opti/celar-scen01-sub-all-opti.xml')
 
 
