@@ -1,2 +1,6 @@
+__pycache__/*
 frodo2/._*
 frodo2/.temp*
+all-sub*.csv
+tmp_mas/*
+res/*

@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<instance>
+	<presentation format="XCSP 2.1_FRODO" maxConstraintArity="2" maximize="false" name="sampleProblem"/>
+	<variables nbVariables="10">
+		<variable domain="dom_1" name="1"/>
+		<variable domain="dom_1" name="2"/>
+		<variable domain="dom_1" name="7"/>
+		<variable domain="dom_1" name="8"/>
+		<variable domain="dom_1" name="9"/>
+		<variable domain="dom_1" name="10"/>
+		<variable domain="dom_1" name="13"/>
+		<variable domain="dom_1" name="14"/>
+		<variable domain="dom_1" name="15"/>
+		<variable domain="dom_1" name="16"/>
+	</variables>
+</instance>

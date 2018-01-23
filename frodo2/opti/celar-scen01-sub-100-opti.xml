@@ -2,106 +2,106 @@
 <instance>
 	<presentation format="XCSP 2.1_FRODO" maxConstraintArity="2" maximize="false" name="sampleProblem"/>
 	<variables nbVariables="100">
-		<variable agent="agt_1" domain="dom_1" name="ant_1"/>
-		<variable agent="agt_2" domain="dom_1" name="ant_2"/>
-		<variable agent="agt_1" domain="dom_2" name="ant_3"/>
-		<variable agent="agt_2" domain="dom_2" name="ant_4"/>
-		<variable agent="agt_1" domain="dom_1" name="ant_5"/>
-		<variable agent="agt_2" domain="dom_1" name="ant_6"/>
-		<variable agent="agt_1" domain="dom_1" name="ant_7"/>
-		<variable agent="agt_2" domain="dom_1" name="ant_8"/>
-		<variable agent="agt_3" domain="dom_1" name="ant_9"/>
-		<variable agent="agt_4" domain="dom_1" name="ant_10"/>
-		<variable agent="agt_1" domain="dom_1" name="ant_11"/>
-		<variable agent="agt_2" domain="dom_1" name="ant_12"/>
-		<variable agent="agt_1" domain="dom_1" name="ant_13"/>
-		<variable agent="agt_2" domain="dom_1" name="ant_14"/>
-		<variable agent="agt_3" domain="dom_1" name="ant_15"/>
-		<variable agent="agt_2" domain="dom_1" name="ant_16"/>
-		<variable agent="agt_4" domain="dom_1" name="ant_17"/>
-		<variable agent="agt_3" domain="dom_1" name="ant_18"/>
-		<variable agent="agt_3" domain="dom_2" name="ant_19"/>
-		<variable agent="agt_4" domain="dom_2" name="ant_20"/>
-		<variable agent="agt_1" domain="dom_3" name="ant_21"/>
-		<variable agent="agt_2" domain="dom_3" name="ant_22"/>
-		<variable agent="agt_1" domain="dom_3" name="ant_23"/>
-		<variable agent="agt_2" domain="dom_3" name="ant_24"/>
-		<variable agent="agt_1" domain="dom_1" name="ant_25"/>
-		<variable agent="agt_2" domain="dom_1" name="ant_26"/>
-		<variable agent="agt_1" domain="dom_1" name="ant_27"/>
-		<variable agent="agt_2" domain="dom_1" name="ant_28"/>
-		<variable agent="agt_1" domain="dom_2" name="ant_29"/>
-		<variable agent="agt_2" domain="dom_2" name="ant_30"/>
-		<variable agent="agt_3" domain="dom_2" name="ant_31"/>
-		<variable agent="agt_4" domain="dom_2" name="ant_32"/>
-		<variable agent="agt_3" domain="dom_2" name="ant_33"/>
-		<variable agent="agt_4" domain="dom_2" name="ant_34"/>
-		<variable agent="agt_5" domain="dom_2" name="ant_35"/>
-		<variable agent="agt_6" domain="dom_2" name="ant_36"/>
-		<variable agent="agt_7" domain="dom_2" name="ant_37"/>
-		<variable agent="agt_8" domain="dom_2" name="ant_38"/>
-		<variable agent="agt_7" domain="dom_2" name="ant_39"/>
-		<variable agent="agt_8" domain="dom_2" name="ant_40"/>
-		<variable agent="agt_7" domain="dom_2" name="ant_41"/>
-		<variable agent="agt_9" domain="dom_2" name="ant_42"/>
-		<variable agent="agt_5" domain="dom_2" name="ant_43"/>
-		<variable agent="agt_6" domain="dom_2" name="ant_44"/>
-		<variable agent="agt_7" domain="dom_2" name="ant_45"/>
-		<variable agent="agt_8" domain="dom_2" name="ant_46"/>
-		<variable agent="agt_9" domain="dom_2" name="ant_47"/>
+		<variable agent="agt_01" domain="dom_1" name="ant_1"/>
+		<variable agent="agt_02" domain="dom_1" name="ant_2"/>
+		<variable agent="agt_01" domain="dom_2" name="ant_3"/>
+		<variable agent="agt_02" domain="dom_2" name="ant_4"/>
+		<variable agent="agt_01" domain="dom_1" name="ant_5"/>
+		<variable agent="agt_02" domain="dom_1" name="ant_6"/>
+		<variable agent="agt_01" domain="dom_1" name="ant_7"/>
+		<variable agent="agt_02" domain="dom_1" name="ant_8"/>
+		<variable agent="agt_03" domain="dom_1" name="ant_9"/>
+		<variable agent="agt_04" domain="dom_1" name="ant_10"/>
+		<variable agent="agt_01" domain="dom_1" name="ant_11"/>
+		<variable agent="agt_02" domain="dom_1" name="ant_12"/>
+		<variable agent="agt_01" domain="dom_1" name="ant_13"/>
+		<variable agent="agt_02" domain="dom_1" name="ant_14"/>
+		<variable agent="agt_03" domain="dom_1" name="ant_15"/>
+		<variable agent="agt_02" domain="dom_1" name="ant_16"/>
+		<variable agent="agt_04" domain="dom_1" name="ant_17"/>
+		<variable agent="agt_03" domain="dom_1" name="ant_18"/>
+		<variable agent="agt_03" domain="dom_2" name="ant_19"/>
+		<variable agent="agt_04" domain="dom_2" name="ant_20"/>
+		<variable agent="agt_01" domain="dom_3" name="ant_21"/>
+		<variable agent="agt_02" domain="dom_3" name="ant_22"/>
+		<variable agent="agt_01" domain="dom_3" name="ant_23"/>
+		<variable agent="agt_02" domain="dom_3" name="ant_24"/>
+		<variable agent="agt_01" domain="dom_1" name="ant_25"/>
+		<variable agent="agt_02" domain="dom_1" name="ant_26"/>
+		<variable agent="agt_01" domain="dom_1" name="ant_27"/>
+		<variable agent="agt_02" domain="dom_1" name="ant_28"/>
+		<variable agent="agt_01" domain="dom_2" name="ant_29"/>
+		<variable agent="agt_02" domain="dom_2" name="ant_30"/>
+		<variable agent="agt_03" domain="dom_2" name="ant_31"/>
+		<variable agent="agt_04" domain="dom_2" name="ant_32"/>
+		<variable agent="agt_03" domain="dom_2" name="ant_33"/>
+		<variable agent="agt_04" domain="dom_2" name="ant_34"/>
+		<variable agent="agt_05" domain="dom_2" name="ant_35"/>
+		<variable agent="agt_06" domain="dom_2" name="ant_36"/>
+		<variable agent="agt_07" domain="dom_2" name="ant_37"/>
+		<variable agent="agt_08" domain="dom_2" name="ant_38"/>
+		<variable agent="agt_07" domain="dom_2" name="ant_39"/>
+		<variable agent="agt_08" domain="dom_2" name="ant_40"/>
+		<variable agent="agt_07" domain="dom_2" name="ant_41"/>
+		<variable agent="agt_09" domain="dom_2" name="ant_42"/>
+		<variable agent="agt_05" domain="dom_2" name="ant_43"/>
+		<variable agent="agt_06" domain="dom_2" name="ant_44"/>
+		<variable agent="agt_07" domain="dom_2" name="ant_45"/>
+		<variable agent="agt_08" domain="dom_2" name="ant_46"/>
+		<variable agent="agt_09" domain="dom_2" name="ant_47"/>
 		<variable agent="agt_10" domain="dom_2" name="ant_48"/>
-		<variable agent="agt_1" domain="dom_1" name="ant_49"/>
-		<variable agent="agt_2" domain="dom_1" name="ant_50"/>
-		<variable agent="agt_3" domain="dom_1" name="ant_51"/>
-		<variable agent="agt_4" domain="dom_1" name="ant_52"/>
-		<variable agent="agt_5" domain="dom_1" name="ant_53"/>
-		<variable agent="agt_6" domain="dom_1" name="ant_54"/>
-		<variable agent="agt_5" domain="dom_1" name="ant_55"/>
-		<variable agent="agt_6" domain="dom_1" name="ant_56"/>
-		<variable agent="agt_3" domain="dom_1" name="ant_57"/>
-		<variable agent="agt_4" domain="dom_1" name="ant_58"/>
-		<variable agent="agt_5" domain="dom_1" name="ant_59"/>
-		<variable agent="agt_6" domain="dom_1" name="ant_60"/>
-		<variable agent="agt_7" domain="dom_1" name="ant_61"/>
-		<variable agent="agt_8" domain="dom_1" name="ant_62"/>
-		<variable agent="agt_5" domain="dom_4" name="ant_63"/>
-		<variable agent="agt_4" domain="dom_4" name="ant_64"/>
-		<variable agent="agt_6" domain="dom_4" name="ant_65"/>
-		<variable agent="agt_5" domain="dom_4" name="ant_66"/>
-		<variable agent="agt_1" domain="dom_1" name="ant_67"/>
-		<variable agent="agt_2" domain="dom_1" name="ant_68"/>
-		<variable agent="agt_3" domain="dom_1" name="ant_69"/>
-		<variable agent="agt_4" domain="dom_1" name="ant_70"/>
-		<variable agent="agt_1" domain="dom_3" name="ant_71"/>
-		<variable agent="agt_2" domain="dom_3" name="ant_72"/>
-		<variable agent="agt_1" domain="dom_1" name="ant_73"/>
-		<variable agent="agt_2" domain="dom_1" name="ant_74"/>
-		<variable agent="agt_3" domain="dom_3" name="ant_75"/>
-		<variable agent="agt_4" domain="dom_3" name="ant_76"/>
-		<variable agent="agt_5" domain="dom_3" name="ant_77"/>
-		<variable agent="agt_6" domain="dom_3" name="ant_78"/>
-		<variable agent="agt_6" domain="dom_1" name="ant_79"/>
-		<variable agent="agt_7" domain="dom_1" name="ant_80"/>
-		<variable agent="agt_8" domain="dom_1" name="ant_81"/>
-		<variable agent="agt_9" domain="dom_1" name="ant_82"/>
-		<variable agent="agt_1" domain="dom_1" name="ant_83"/>
-		<variable agent="agt_2" domain="dom_1" name="ant_84"/>
-		<variable agent="agt_3" domain="dom_1" name="ant_85"/>
-		<variable agent="agt_4" domain="dom_1" name="ant_86"/>
-		<variable agent="agt_1" domain="dom_1" name="ant_87"/>
-		<variable agent="agt_2" domain="dom_1" name="ant_88"/>
-		<variable agent="agt_3" domain="dom_1" name="ant_89"/>
-		<variable agent="agt_4" domain="dom_1" name="ant_90"/>
-		<variable agent="agt_1" domain="dom_3" name="ant_91"/>
-		<variable agent="agt_2" domain="dom_3" name="ant_92"/>
-		<variable agent="agt_3" domain="dom_1" name="ant_93"/>
-		<variable agent="agt_4" domain="dom_1" name="ant_94"/>
-		<variable agent="agt_5" domain="dom_1" name="ant_95"/>
-		<variable agent="agt_6" domain="dom_1" name="ant_96"/>
-		<variable agent="agt_7" domain="dom_1" name="ant_97"/>
-		<variable agent="agt_8" domain="dom_1" name="ant_98"/>
-		<variable agent="agt_5" domain="dom_1" name="ant_99"/>
-		<variable agent="agt_6" domain="dom_1" name="ant_100"/>
+		<variable agent="agt_01" domain="dom_1" name="ant_49"/>
+		<variable agent="agt_02" domain="dom_1" name="ant_50"/>
+		<variable agent="agt_03" domain="dom_1" name="ant_51"/>
+		<variable agent="agt_04" domain="dom_1" name="ant_52"/>
+		<variable agent="agt_05" domain="dom_1" name="ant_53"/>
+		<variable agent="agt_06" domain="dom_1" name="ant_54"/>
+		<variable agent="agt_05" domain="dom_1" name="ant_55"/>
+		<variable agent="agt_06" domain="dom_1" name="ant_56"/>
+		<variable agent="agt_03" domain="dom_1" name="ant_57"/>
+		<variable agent="agt_04" domain="dom_1" name="ant_58"/>
+		<variable agent="agt_05" domain="dom_1" name="ant_59"/>
+		<variable agent="agt_06" domain="dom_1" name="ant_60"/>
+		<variable agent="agt_07" domain="dom_1" name="ant_61"/>
+		<variable agent="agt_08" domain="dom_1" name="ant_62"/>
+		<variable agent="agt_05" domain="dom_4" name="ant_63"/>
+		<variable agent="agt_04" domain="dom_4" name="ant_64"/>
+		<variable agent="agt_06" domain="dom_4" name="ant_65"/>
+		<variable agent="agt_05" domain="dom_4" name="ant_66"/>
+		<variable agent="agt_01" domain="dom_1" name="ant_67"/>
+		<variable agent="agt_02" domain="dom_1" name="ant_68"/>
+		<variable agent="agt_03" domain="dom_1" name="ant_69"/>
+		<variable agent="agt_04" domain="dom_1" name="ant_70"/>
+		<variable agent="agt_01" domain="dom_3" name="ant_71"/>
+		<variable agent="agt_02" domain="dom_3" name="ant_72"/>
+		<variable agent="agt_01" domain="dom_1" name="ant_73"/>
+		<variable agent="agt_02" domain="dom_1" name="ant_74"/>
+		<variable agent="agt_03" domain="dom_3" name="ant_75"/>
+		<variable agent="agt_04" domain="dom_3" name="ant_76"/>
+		<variable agent="agt_05" domain="dom_3" name="ant_77"/>
+		<variable agent="agt_06" domain="dom_3" name="ant_78"/>
+		<variable agent="agt_06" domain="dom_1" name="ant_79"/>
+		<variable agent="agt_07" domain="dom_1" name="ant_80"/>
+		<variable agent="agt_08" domain="dom_1" name="ant_81"/>
+		<variable agent="agt_09" domain="dom_1" name="ant_82"/>
+		<variable agent="agt_01" domain="dom_1" name="ant_83"/>
+		<variable agent="agt_02" domain="dom_1" name="ant_84"/>
+		<variable agent="agt_03" domain="dom_1" name="ant_85"/>
+		<variable agent="agt_04" domain="dom_1" name="ant_86"/>
+		<variable agent="agt_01" domain="dom_1" name="ant_87"/>
+		<variable agent="agt_02" domain="dom_1" name="ant_88"/>
+		<variable agent="agt_03" domain="dom_1" name="ant_89"/>
+		<variable agent="agt_04" domain="dom_1" name="ant_90"/>
+		<variable agent="agt_01" domain="dom_3" name="ant_91"/>
+		<variable agent="agt_02" domain="dom_3" name="ant_92"/>
+		<variable agent="agt_03" domain="dom_1" name="ant_93"/>
+		<variable agent="agt_04" domain="dom_1" name="ant_94"/>
+		<variable agent="agt_05" domain="dom_1" name="ant_95"/>
+		<variable agent="agt_06" domain="dom_1" name="ant_96"/>
+		<variable agent="agt_07" domain="dom_1" name="ant_97"/>
+		<variable agent="agt_08" domain="dom_1" name="ant_98"/>
+		<variable agent="agt_05" domain="dom_1" name="ant_99"/>
+		<variable agent="agt_06" domain="dom_1" name="ant_100"/>
 	</variables>
 	<domains nbDomains="4">
 		<domain name="dom_1" nbValues="44">16 30 44 58 72 86 100 114 128 142 156 254 268 282 296 310 324 338 352 366 380 394 414 428 442 456 470 484 498 512 526 540 554 652 666 680 694 708 722 736 750 764 778 792</domain>
@@ -981,15 +981,15 @@
 		</constraint>
 	</constraints>
 	<agents nbAgents="10">
-		<agent name="agt_1"/>
-		<agent name="agt_2"/>
-		<agent name="agt_3"/>
-		<agent name="agt_4"/>
-		<agent name="agt_5"/>
-		<agent name="agt_6"/>
-		<agent name="agt_7"/>
-		<agent name="agt_8"/>
-		<agent name="agt_9"/>
+		<agent name="agt_01"/>
+		<agent name="agt_02"/>
+		<agent name="agt_03"/>
+		<agent name="agt_04"/>
+		<agent name="agt_05"/>
+		<agent name="agt_06"/>
+		<agent name="agt_07"/>
+		<agent name="agt_08"/>
+		<agent name="agt_09"/>
 		<agent name="agt_10"/>
 	</agents>
 </instance>
